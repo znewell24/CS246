@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://C:\Users\andrew\Documents\BYU_I\winter 2018\246\togo\ToGo.iml" filepath="C:\Users\andrew\Documents\BYU_I\winter 2018\246\togo\ToGo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://C:\Users\andrew\Documents\BYU_I\winter 2018\246\togo\app\app.iml" filepath="C:\Users\andrew\Documents\BYU_I\winter 2018\246\togo\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/togo.iml" filepath="$PROJECT_DIR$/togo.iml" />
     </modules>
   </component>
