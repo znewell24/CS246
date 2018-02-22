@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/togo.iml" filepath="$PROJECT_DIR$/togo.iml" />
-=======
-      <module fileurl="file://$PROJECT_DIR$/ToGo.iml" filepath="$PROJECT_DIR$/ToGo.iml" />
-      <module fileurl="file://C:\Users\znewe_000\ToGo\ToGo.iml" filepath="C:\Users\znewe_000\ToGo\ToGo.iml" />
-      <module fileurl="file://C:\Users\Justin\ToGo\ToGo\ToGo.iml" filepath="C:\Users\Justin\ToGo\ToGo\ToGo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://C:\Users\Justin\ToGo\ToGo\app\app.iml" filepath="C:\Users\Justin\ToGo\ToGo\app\app.iml" />
-      <module fileurl="file://C:\Users\znewe_000\ToGo\app\app.iml" filepath="C:\Users\znewe_000\ToGo\app\app.iml" />
->>>>>>> ef2f031bb33473115b68ebeaafff63984e984551
     </modules>
   </component>
 </project>
