@@ -7,4 +7,7 @@
     <color name="gold">#FFD700</color>
     <color name="goldenrod">#DAA520</color>
     <color name="darkred">#8B0000</color>
+    <color name="brown">#A52A2A</color>
+    <color name="firbrick">#B22222</color>
+    <color name="maroon">#800000</color>
 </resources>
