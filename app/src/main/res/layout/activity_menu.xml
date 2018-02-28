@@ -7,6 +7,18 @@
     tools:context="com.example.team6.togo.MenuActivity"
     android:isScrollContainer="true">
 
+    <ImageButton
+        android:id="@+id/cart"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:onClick="toCheckout"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cart" />
+
     <TextView
         android:id="@+id/Menu"
         android:layout_width="wrap_content"
@@ -502,5 +514,7 @@
         </GridLayout>
     </LinearLayout>
     </ScrollView>
+
+
 
 </android.support.constraint.ConstraintLayout>

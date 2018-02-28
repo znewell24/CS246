@@ -15,4 +15,9 @@ public class MenuActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
     }
+
+    public void toCheckout(View view) {
+        Intent intent = new Intent(this, CheckoutActivity.class);
+        startActivity(intent);
+    }
 }
