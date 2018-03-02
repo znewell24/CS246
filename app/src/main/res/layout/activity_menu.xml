@@ -7,20 +7,15 @@
     android:isScrollContainer="true"
     tools:context="com.example.team6.togo.MenuActivity">
 
-    <ImageButton
-        android:id="@+id/cart"
-        android:layout_width="64dp"
-        android:layout_height="62dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginStart="8dp"
-        android:onClick="toCheckout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.854"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/Menu"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/cart" />
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="51dp"-->
+        <!--android:layout_marginBottom="60dp"-->
+        <!--android:background="@color/goldenrod"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/scrollView3"-->
+        <!--tools:layout_editor_absoluteX="0dp">-->
+    <!--</android.support.v7.widget.Toolbar>-->
 
     <TextView
         android:id="@+id/Menu"
@@ -35,6 +30,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/cart"
+            android:layout_width="64dp"
+            android:layout_height="62dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginStart="8dp"
+            android:onClick="toCheckout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.851"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Menu"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/cart" />
+
+
 
     <ScrollView
         android:id="@+id/scrollView3"
@@ -151,7 +163,7 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginRight="16dp"
                     android:layout_rowWeight="1"
-                    app:cardBackgroundColor="@android:color/holo_purple"
+                    app:cardBackgroundColor="@color/lightgrey"
                     app:cardElevation="0dp"
                     app:cardUseCompatPadding="true">
 
@@ -168,7 +180,7 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginRight="16dp"
                     android:layout_rowWeight="1"
-                    app:cardBackgroundColor="@android:color/holo_purple"
+                    app:cardBackgroundColor="@color/lightgrey"
                     app:cardElevation="0dp"
                     app:cardUseCompatPadding="true">
 
@@ -185,7 +197,7 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginRight="16dp"
                     android:layout_rowWeight="1"
-                    app:cardBackgroundColor="@android:color/holo_purple"
+                    app:cardBackgroundColor="@color/lightgrey"
                     app:cardElevation="0dp"
                     app:cardUseCompatPadding="true">
 
@@ -202,7 +214,7 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginRight="16dp"
                     android:layout_rowWeight="1"
-                    app:cardBackgroundColor="@android:color/holo_purple"
+                    app:cardBackgroundColor="@color/lightgrey"
                     app:cardElevation="0dp"
                     app:cardUseCompatPadding="true">
 
@@ -217,7 +229,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Apetizers" />
+                android:background="@color/darkgrey"
+                android:text="Burgers" />
 
             <GridLayout
                 android:layout_width="match_parent"
@@ -232,7 +245,7 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginRight="16dp"
                     android:layout_rowWeight="1"
-                    app:cardBackgroundColor="@android:color/holo_purple"
+                    app:cardBackgroundColor="@color/lightgrey"
                     app:cardElevation="0dp"
                     app:cardUseCompatPadding="true">
 
@@ -240,7 +253,9 @@
 
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="TextView" />
+                        android:clickable="true"
+                        android:onClick="toToast"
+                        android:text="Quarter Pounder" />
                 </android.support.v7.widget.CardView>
 
                 <android.support.v7.widget.CardView
@@ -249,7 +264,7 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginRight="16dp"
                     android:layout_rowWeight="1"
-                    app:cardBackgroundColor="@android:color/holo_purple"
+                    app:cardBackgroundColor="@color/lightgrey"
                     app:cardElevation="0dp"
                     app:cardUseCompatPadding="true">
 
@@ -257,7 +272,7 @@
 
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="TextView" />
+                        android:text="Half Pounder" />
                 </android.support.v7.widget.CardView>
 
                 <android.support.v7.widget.CardView
@@ -266,7 +281,7 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginRight="16dp"
                     android:layout_rowWeight="1"
-                    app:cardBackgroundColor="@android:color/holo_purple"
+                    app:cardBackgroundColor="@color/lightgrey"
                     app:cardElevation="0dp"
                     app:cardUseCompatPadding="true">
 
@@ -274,7 +289,7 @@
 
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="TextView" />
+                        android:text="BBQ Bacon Burger" />
                 </android.support.v7.widget.CardView>
 
                 <android.support.v7.widget.CardView
@@ -283,7 +298,7 @@
                     android:layout_marginLeft="16dp"
                     android:layout_marginRight="16dp"
                     android:layout_rowWeight="1"
-                    app:cardBackgroundColor="@android:color/holo_purple"
+                    app:cardBackgroundColor="@color/lightgrey"
                     app:cardElevation="0dp"
                     app:cardUseCompatPadding="true">
 
@@ -291,14 +306,49 @@
 
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="TextView" />
+                        android:text="Honey Badger Burger" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_rowWeight="1"
+                    app:cardBackgroundColor="@color/lightgrey"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="true">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Briskey Business" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView
+                    android:layout_columnWeight="1"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_rowWeight="1"
+                    app:cardBackgroundColor="@color/lightgrey"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="true">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="BIG 'S' Burger" />
                 </android.support.v7.widget.CardView>
             </GridLayout>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="Steaks" />
+                android:layout_marginLeft="12dp"
+                android:text="Salads" />
 
             <GridLayout
                 android:layout_width="match_parent"
@@ -312,8 +362,9 @@
                     android:layout_marginBottom="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
                     android:layout_rowWeight="1"
-                    app:cardBackgroundColor="@android:color/holo_purple"
+                    app:cardBackgroundColor="@color/lightgrey"
                     app:cardElevation="0dp"
                     app:cardUseCompatPadding="true">
 
@@ -321,7 +372,7 @@
 
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="TextView" />
+                        android:text="COBB SALAD" />
                 </android.support.v7.widget.CardView>
 
                 <android.support.v7.widget.CardView
@@ -329,8 +380,9 @@
                     android:layout_marginBottom="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginRight="16dp"
+                    android:layout_marginTop="16dp"
                     android:layout_rowWeight="1"
-                    app:cardBackgroundColor="@android:color/holo_purple"
+                    app:cardBackgroundColor="@color/lightgrey"
                     app:cardElevation="0dp"
                     app:cardUseCompatPadding="true">
 
@@ -338,42 +390,9 @@
 
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="TextView" />
+                        android:text="SWEET PULLED PORK SALAD" />
                 </android.support.v7.widget.CardView>
 
-                <android.support.v7.widget.CardView
-                    android:layout_columnWeight="1"
-                    android:layout_marginBottom="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_rowWeight="1"
-                    app:cardBackgroundColor="@android:color/holo_purple"
-                    app:cardElevation="0dp"
-                    app:cardUseCompatPadding="true">
-
-                    <TextView
-
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="TextView" />
-                </android.support.v7.widget.CardView>
-
-                <android.support.v7.widget.CardView
-                    android:layout_columnWeight="1"
-                    android:layout_marginBottom="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_rowWeight="1"
-                    app:cardBackgroundColor="@android:color/holo_purple"
-                    app:cardElevation="0dp"
-                    app:cardUseCompatPadding="true">
-
-                    <TextView
-
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="TextView" />
-                </android.support.v7.widget.CardView>
             </GridLayout>
 
             <TextView
