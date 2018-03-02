@@ -25,6 +25,10 @@ public class MenuActivity extends AppCompatActivity {
 
     }
 
+    public void displayItem(View view) {
+      startActivity(new Intent(this, DisplayItemActivity.class));
+    }
+
 //    @Override
 //    public boolean onCreateOptionsMenu(Menu menu) {
 //        getMenuInflater().inflate(R.menu.menu, menu);

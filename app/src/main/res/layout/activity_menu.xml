@@ -92,7 +92,10 @@
                     <TextView
 
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent" />
+                        android:layout_height="match_parent"
+                        android:contentDescription="what is happening"
+                        android:textAlignment="center"
+                        tools:text="Bob" />
                 </android.support.v7.widget.CardView>
 
                 <android.support.v7.widget.CardView
