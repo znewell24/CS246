@@ -12,6 +12,7 @@ import android.widget.Toast;
 public class MenuActivity extends AppCompatActivity {
 
 //    Toolbar toolbar;
+    Intent intent;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,9 +24,12 @@ public class MenuActivity extends AppCompatActivity {
         Intent intent = getIntent();
 
 
+
+
     }
 
     public void displayItem(View view) {
+
       startActivity(new Intent(this, DisplayItemActivity.class));
     }
 
