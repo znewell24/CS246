@@ -22,10 +22,12 @@ public class MenuActivity extends AppCompatActivity {
 //        setSupportActionBar(toolbar);
 
         Intent intent = getIntent();
+    }
 
 
-
-
+    public void onClick(View view){
+        Intent intent = new Intent(this, DisplayItemActivity.class);
+        startActivity(intent);
     }
 
     public void displayItem(View view) {
