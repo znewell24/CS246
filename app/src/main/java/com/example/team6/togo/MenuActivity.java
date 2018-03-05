@@ -7,6 +7,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class MenuActivity extends AppCompatActivity {
@@ -24,6 +25,8 @@ public class MenuActivity extends AppCompatActivity {
 
 
     }
+
+
 
     public void displayItem(View view) {
       startActivity(new Intent(this, DisplayItemActivity.class));

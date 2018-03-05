@@ -90,7 +90,7 @@
                     android:layout_width="match_parent">
 
                     <TextView
-
+                        android:id="@+id/bob"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:contentDescription="what is happening"
