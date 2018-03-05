@@ -51,9 +51,10 @@
     <ScrollView
         android:id="@+id/scrollView3"
         android:layout_width="368dp"
-        android:layout_height="448dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
+        android:layout_height="448dp"
+
         android:layout_marginStart="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -78,164 +79,58 @@
                 android:orientation="vertical">
 
                 <android.support.v7.widget.CardView
-                    android:layout_columnWeight="1"
+                    android:id="@+id/bbqBaconCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_marginBottom="16dp"
                     android:layout_marginLeft="16dp"
                     android:layout_marginRight="16dp"
                     android:layout_rowWeight="1"
+                    android:clickable="true"
+                    android:onClick="onClick"
                     app:cardBackgroundColor="@android:color/holo_purple"
                     app:cardElevation="0dp"
-                    app:cardUseCompatPadding="true"
-                    android:layout_height="match_parent"
-                    android:layout_width="match_parent">
+                    app:cardUseCompatPadding="true">
 
                     <TextView
-
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:contentDescription="what is happening"
-                        android:textAlignment="center"
-                        tools:text="Bob" />
-                </android.support.v7.widget.CardView>
-
-                <android.support.v7.widget.CardView
-                    android:layout_marginBottom="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_rowWeight="1"
-                    app:cardBackgroundColor="@android:color/holo_purple"
-                    app:cardElevation="0dp"
-                    app:cardUseCompatPadding="true"
-                    android:layout_height="match_parent"
-                    android:layout_width="match_parent">
+                        android:id="@+id/bbqBaconPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="275dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="10.99" />
 
                     <TextView
-
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" />
-                </android.support.v7.widget.CardView>
-
-                <android.support.v7.widget.CardView
-                    android:layout_marginBottom="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_rowWeight="1"
-                    app:cardBackgroundColor="@android:color/holo_purple"
-                    app:cardElevation="0dp"
-                    app:cardUseCompatPadding="true"
-                    android:layout_height="match_parent"
-                    android:layout_width="match_parent">
+                        android:id="@+id/bbqBaconDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="35dp"
+                        android:text="A favorite around here. A half pound patty with cheddar cheese, smoky bacon, golden onion rings, lettuce, tomato and somethered in our Sweet Hickory Sauce"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="TextView" />
-                </android.support.v7.widget.CardView>
-
-                <android.support.v7.widget.CardView
-                    android:layout_columnWeight="1"
-                    android:layout_marginBottom="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_rowWeight="1"
-                    app:cardBackgroundColor="@android:color/holo_purple"
-                    app:cardElevation="0dp"
-                    app:cardUseCompatPadding="true"
-                    android:layout_height="match_parent"
-                    android:layout_width="match_parent">
-
-                    <TextView
-
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="TextView" />
-                </android.support.v7.widget.CardView>
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Sandwiches" />
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:columnCount="2"
-                android:columnOrderPreserved="false"
-                android:rowCount="39"
-                android:orientation="vertical">
-
-                <android.support.v7.widget.CardView
-                    android:layout_columnWeight="1"
-                    android:layout_marginBottom="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_rowWeight="1"
-                    app:cardBackgroundColor="@color/lightgrey"
-                    app:cardElevation="0dp"
-                    app:cardUseCompatPadding="true"
-                    android:layout_height="match_parent"
-                    android:layout_width="match_parent">
-
-                    <TextView
-
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" />
-                </android.support.v7.widget.CardView>
-
-                <android.support.v7.widget.CardView
-                    android:layout_marginBottom="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_rowWeight="1"
-                    app:cardBackgroundColor="@color/lightgrey"
-                    app:cardElevation="0dp"
-                    app:cardUseCompatPadding="true"
-                    android:layout_height="match_parent"
-                    android:layout_width="match_parent">
-
-                    <TextView
-
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" />
-                </android.support.v7.widget.CardView>
-
-                <android.support.v7.widget.CardView
-                    android:layout_marginBottom="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_rowWeight="1"
-                    app:cardBackgroundColor="@color/lightgrey"
-                    app:cardElevation="0dp"
-                    app:cardUseCompatPadding="true"
-                    android:layout_height="match_parent"
-                    android:layout_width="match_parent">
-
-                    <TextView
-
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="TextView" />
-                </android.support.v7.widget.CardView>
-
-                <android.support.v7.widget.CardView
-                    android:layout_columnWeight="1"
-                    android:layout_marginBottom="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_rowWeight="1"
-                    app:cardBackgroundColor="@color/lightgrey"
-                    app:cardElevation="0dp"
-                    app:cardUseCompatPadding="true"
-                    android:layout_height="match_parent"
-                    android:layout_width="match_parent">
-
-                    <TextView
-
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="TextView" />
+                        android:id="@+id/bbqBaconName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="BBQ Bacon"
+                        android:textSize="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.052" />
                 </android.support.v7.widget.CardView>
 
             </LinearLayout>
