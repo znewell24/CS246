@@ -8,11 +8,10 @@ import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-<<<<<<< HEAD
+
 import android.widget.Switch;
 import android.widget.TextView;
-=======
->>>>>>> b027cba7e84432a5118c0ba829ac1fa14e95a2be
+
 import android.widget.Toast;
 
 import org.w3c.dom.Text;
@@ -69,6 +68,7 @@ public class MenuActivity extends AppCompatActivity {
         intent.putExtra(PRICE, sPrice);
         startActivity(intent);
     }
+
 
 
 
