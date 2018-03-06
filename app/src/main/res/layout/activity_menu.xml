@@ -60,65 +60,27 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
                 android:text="Burgers" />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:columnCount="2"
-                android:columnOrderPreserved="false"
-                android:rowCount="39"
-                android:orientation="vertical">
 
-
-                <android.support.v7.widget.CardView
-                    android:layout_columnWeight="1"
-                    android:layout_marginBottom="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_rowWeight="1"
-                    app:cardBackgroundColor="@android:color/holo_purple"
-                    app:cardElevation="0dp"
-                    app:cardUseCompatPadding="true"
-                    android:layout_height="match_parent"
-                    android:layout_width="match_parent">
-
-                    <TextView
-                        android:id="@+id/bob"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:contentDescription="what is happening"
-                        android:textAlignment="center"
-                        tools:text="Bob" />
-                </android.support.v7.widget.CardView>
-
-                <android.support.v7.widget.CardView
-                    android:layout_marginBottom="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
-                    android:layout_rowWeight="1"
-                    app:cardBackgroundColor="@android:color/holo_purple"
-                    app:cardElevation="0dp"
-                    app:cardUseCompatPadding="true"
-                    android:layout_height="match_parent"
-                    android:layout_width="match_parent">
-
-                    <TextView
-
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent" />
-                </android.support.v7.widget.CardView>
-
+            <!-- New Menu Item -->
                 <android.support.v7.widget.CardView
                     android:id="@+id/bbqBaconCard"
                     android:clickable="true"
                     android:onClick="onClick"
-                    android:layout_marginBottom="16dp"
-                    android:layout_marginLeft="16dp"
-                    android:layout_marginRight="16dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
                     android:layout_rowWeight="1"
                     app:cardBackgroundColor="@android:color/holo_purple"
                     app:cardElevation="0dp"
@@ -167,9 +129,63 @@
                         app:layout_constraintVertical_bias="0.052" />
                 </android.support.v7.widget.CardView>
 
-            </LinearLayout>
+            <!-- New Menu Item -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/honeyBadgerCard"
+                android:clickable="true"
+                android:onClick="onClick"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_rowWeight="1"
+                app:cardBackgroundColor="@android:color/holo_purple"
+                app:cardElevation="0dp"
+                app:cardUseCompatPadding="true"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent">
 
+                <TextView
+                    android:id="@+id/honeyBadgerPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="275dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="12.49" />
 
+                <TextView
+                    android:id="@+id/honeyBadgerDescription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="35dp"
+                    android:text="If you want a burger that flirts with the wild side, you have found it! Start with our signature half pound patty and stack it with grilled pastrami, wrapped tightly around a 4 ounce portion of slow smoked pulled pork, crispy bacon, lettuce, pickle, tomato, onion, swiss and placed carefully between buns grilled with golden honey and mustard. You will not soon forget your date with the badger!"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/honeyBadgerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Honey Badger"
+                    android:textSize="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.052" />
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
         </ScrollView>
     </android.support.constraint.ConstraintLayout>
 
