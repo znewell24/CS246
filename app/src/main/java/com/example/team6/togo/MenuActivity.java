@@ -48,6 +48,7 @@ public class MenuActivity extends AppCompatActivity {
                 name = (TextView) findViewById(R.id.bbqBaconName);
                 description = (TextView) findViewById(R.id.bbqBaconDescription);
                 price = (TextView) findViewById(R.id.bbqBaconPrice);
+
                 sName = name.getText().toString();
                 sDescription = description.getText().toString();
                 sPrice = price.getText().toString();
@@ -56,6 +57,7 @@ public class MenuActivity extends AppCompatActivity {
                 name = (TextView) findViewById(R.id.honeyBadgerName);
                 description = (TextView) findViewById(R.id.honeyBadgerDescription);
                 price = (TextView) findViewById(R.id.honeyBadgerPrice);
+
                 sName = name.getText().toString();
                 sDescription = description.getText().toString();
                 sPrice = price.getText().toString();

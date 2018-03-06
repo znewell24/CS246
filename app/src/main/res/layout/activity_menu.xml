@@ -72,7 +72,10 @@
                 android:layout_marginLeft="8dp"
                 android:text="Burgers" />
 
-
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
             <!-- New Menu Item -->
                 <android.support.v7.widget.CardView
                     android:id="@+id/bbqBaconCard"
@@ -184,7 +187,7 @@
                     app:layout_constraintTop_toTopOf="parent"
                     app:layout_constraintVertical_bias="0.052" />
             </android.support.v7.widget.CardView>
-
+            </LinearLayout>
         </LinearLayout>
         </ScrollView>
     </android.support.constraint.ConstraintLayout>
