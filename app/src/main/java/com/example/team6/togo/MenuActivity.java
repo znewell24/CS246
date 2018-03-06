@@ -3,6 +3,7 @@ package com.example.team6.togo;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.View;
@@ -17,45 +18,48 @@ import android.widget.Toast;
 import org.w3c.dom.Text;
 
 public class MenuActivity extends AppCompatActivity {
-    public static final String NAME = "com.example.team6.togo.name";
-    public static final String DES = "com.example.team6.togo.name";
-    public static final String PRICE = "com.example.team6.togo.name";
+    public static final String NAME = "com.example.team6.togo.sname";
+    public static final String DES = "com.example.team6.togo.sdescription";
+    public static final String PRICE = "com.example.team6.togo.sprice";
 
-//    Toolbar toolbar;
-    Intent intent;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
-
 //        toolbar = (Toolbar) findViewById(R.id.toolbar);
 //        setSupportActionBar(toolbar);
-
-        Intent intent = getIntent();
     }
 
 
     public void onClick(View view){
         Intent intent = new Intent(this, DisplayItemActivity.class);
-
         TextView name;
         TextView description;
         TextView price;
+
         String sName;
         String sDescription;
         String sPrice;
 
 
-        switch(view.getId()) {
+        switch(view.getId()){
             case R.id.bbqBaconCard:
-                name = findViewById(R.id.bbqBaconName);
-                description = findViewById(R.id.bbqBaconDescription);
-                price = findViewById(R.id.bbqBaconPrice);
+                name = (TextView) findViewById(R.id.bbqBaconName);
+                description = (TextView) findViewById(R.id.bbqBaconDescription);
+                price = (TextView) findViewById(R.id.bbqBaconPrice);
                 sName = name.getText().toString();
                 sDescription = description.getText().toString();
                 sPrice = price.getText().toString();
                 break;
-
+            case R.id.honeyBadgerCard:
+                name = (TextView) findViewById(R.id.honeyBadgerName);
+                description = (TextView) findViewById(R.id.honeyBadgerDescription);
+                price = (TextView) findViewById(R.id.honeyBadgerPrice);
+                sName = name.getText().toString();
+                sDescription = description.getText().toString();
+                sPrice = price.getText().toString();
+                break;
             default:
                 sName = "nothing";
                 sDescription = "nothing";
