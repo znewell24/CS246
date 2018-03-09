@@ -27,10 +27,13 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:text="The Hickory-Menu"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/scrollView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageButton
         android:id="@+id/cart"
@@ -95,22 +98,22 @@
                     android:layout_width="match_parent">
 
                     <TextView
-                        android:id="@+id/bbqBaconPrice"
+                        android:id="@+id/toweringOnionRingsPrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="275dp"
                         android:layout_marginRight="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="10.99" />
+                        android:text="6.99" />
 
                     <TextView
-                        android:id="@+id/bbqBaconDescription"
+                        android:id="@+id/toweringOnionRingsDescription"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="12dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="35dp"
-                        android:text="A favorite around here. A half pound patty with cheddar cheese, smoky bacon, golden onion rings, lettuce, tomato and somethered in our Sweet Hickory Sauce"
+                        android:text="These babies are sure to make your eyes pop! At over 1 inch tall per ring, these golden fried beer batter onion rings are piled high to the sky and just might make you cry!"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
@@ -118,13 +121,13 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/bbqBaconName"
+                        android:id="@+id/toweringOnionRingsName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="BBQ Bacon"
+                        android:text="Towering Onion Rings"
                         android:textSize="20dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -137,36 +140,36 @@
 
                 <!-- New Menu Item -->
                 <android.support.v7.widget.CardView
-                    android:id="@+id/honeyBadgerCard"
-                    android:clickable="true"
-                    android:onClick="onClick"
+                    android:id="@+id/friedMacAndCheeseCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_marginBottom="8dp"
                     android:layout_marginLeft="8dp"
                     android:layout_marginRight="8dp"
                     android:layout_rowWeight="1"
+                    android:clickable="true"
+                    android:onClick="onClick"
                     app:cardBackgroundColor="@android:color/white"
                     app:cardElevation="0dp"
-                    app:cardUseCompatPadding="true"
-                    android:layout_height="match_parent"
-                    android:layout_width="match_parent">
+                    app:cardUseCompatPadding="true">
 
                     <TextView
-                        android:id="@+id/honeyBadgerPrice"
+                        android:id="@+id/friedMacAndCheesePrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="275dp"
                         android:layout_marginRight="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="12.49" />
+                        android:text="6.99" />
 
                     <TextView
-                        android:id="@+id/honeyBadgerDescription"
+                        android:id="@+id/friedMacAndCheeseDescription"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="12dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="35dp"
-                        android:text="If you want a burger that flirts with the wild side, you have found it! Start with our signature half pound patty and stack it with grilled pastrami, wrapped tightly around a 4 ounce portion of slow smoked pulled pork, crispy bacon, lettuce, pickle, tomato, onion, swiss and placed carefully between buns grilled with golden honey and mustard. You will not soon forget your date with the badger!"
+                        android:text="How do you make the ultimate comfort food even better? Well bread it and fry it of course! Crispy on the outside, ooeey gooey in the middle, our mac and cheese bites are sure to reinvent what mac and cheese can be! Served with marinara sauce for your dipping delight!"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
@@ -174,13 +177,13 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/honeyBadgerName"
+                        android:id="@+id/friedMacAndCheeseName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="Honey Badger"
+                        android:text="Fried Mac And Cheese"
                         android:textSize="20dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -192,36 +195,36 @@
                 </android.support.v7.widget.CardView>
                 <!-- New Menu Item -->
                 <android.support.v7.widget.CardView
-                    android:id="@+id/bbqBaconCard"
-                    android:clickable="true"
-                    android:onClick="onClick"
+                    android:id="@+id/friedSqueakyCheeseCurdsCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_marginBottom="8dp"
                     android:layout_marginLeft="8dp"
                     android:layout_marginRight="8dp"
                     android:layout_rowWeight="1"
+                    android:clickable="true"
+                    android:onClick="onClick"
                     app:cardBackgroundColor="@android:color/white"
                     app:cardElevation="0dp"
-                    app:cardUseCompatPadding="true"
-                    android:layout_height="match_parent"
-                    android:layout_width="match_parent">
+                    app:cardUseCompatPadding="true">
 
                     <TextView
-                        android:id="@+id/bbqBaconPrice"
+                        android:id="@+id/friedSqueakyCheeseCurdsPrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="275dp"
                         android:layout_marginRight="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="10.99" />
+                        android:text="6.99" />
 
                     <TextView
-                        android:id="@+id/bbqBaconDescription"
+                        android:id="@+id/friedSqueakyCheeseCurdsDescription"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="12dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="35dp"
-                        android:text="A favorite around here. A half pound patty with cheddar cheese, smoky bacon, golden onion rings, lettuce, tomato and somethered in our Sweet Hickory Sauce"
+                        android:text="This matchless starter will take you to the land of ferris wheels, roller coasters and neon lights! A golden fried state fair food cheesy adventure, served steamin hot with marinara dipping sauce. Guaranteed to take you to a squeaky happy place!"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
@@ -229,13 +232,13 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/bbqBaconName"
+                        android:id="@+id/friedSqueakyCheeseCurdsName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="BBQ Bacon"
+                        android:text="Fried Squeaky Cheese Curds"
                         android:textSize="20dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -248,36 +251,27 @@
 
                 <!-- New Menu Item -->
                 <android.support.v7.widget.CardView
-                    android:id="@+id/honeyBadgerCard"
-                    android:clickable="true"
-                    android:onClick="onClick"
+                    android:id="@+id/friedNickelPicklesCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_marginBottom="8dp"
                     android:layout_marginLeft="8dp"
                     android:layout_marginRight="8dp"
                     android:layout_rowWeight="1"
+                    android:clickable="true"
+                    android:onClick="onClick"
                     app:cardBackgroundColor="@android:color/white"
                     app:cardElevation="0dp"
-                    app:cardUseCompatPadding="true"
-                    android:layout_height="match_parent"
-                    android:layout_width="match_parent">
+                    app:cardUseCompatPadding="true">
 
                     <TextView
-                        android:id="@+id/honeyBadgerPrice"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="275dp"
-                        android:layout_marginRight="8dp"
-                        android:layout_marginTop="8dp"
-                        android:text="12.49" />
-
-                    <TextView
-                        android:id="@+id/honeyBadgerDescription"
+                        android:id="@+id/friedNickelPicklesDescription"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="12dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="35dp"
-                        android:text="If you want a burger that flirts with the wild side, you have found it! Start with our signature half pound patty and stack it with grilled pastrami, wrapped tightly around a 4 ounce portion of slow smoked pulled pork, crispy bacon, lettuce, pickle, tomato, onion, swiss and placed carefully between buns grilled with golden honey and mustard. You will not soon forget your date with the badger!"
+                        android:text="Think of everything you would want from a pickle, and then deep fry it. Tangy, delicious pickles breaded and fried until crispy and golden. Served with a side of jalapeno ranch for a bit of a kick."
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
@@ -285,13 +279,13 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/honeyBadgerName"
+                        android:id="@+id/friedNickelPicklesName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="Honey Badger"
+                        android:text="Fried Nickel Pickles"
                         android:textSize="20dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -300,6 +294,15 @@
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
                         app:layout_constraintVertical_bias="0.052" />
+
+                    <TextView
+                        android:id="@+id/friedNickelPicklesPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="275dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="6.99" />
                 </android.support.v7.widget.CardView>
             </LinearLayout>
 
@@ -316,36 +319,36 @@
                 android:orientation="vertical">
                 <!-- New Menu Item -->
                 <android.support.v7.widget.CardView
-                    android:id="@+id/bbqBaconCard"
-                    android:clickable="true"
-                    android:onClick="onClick"
+                    android:id="@+id/pulledPorkCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_marginBottom="8dp"
                     android:layout_marginLeft="8dp"
                     android:layout_marginRight="8dp"
                     android:layout_rowWeight="1"
+                    android:clickable="true"
+                    android:onClick="onClick"
                     app:cardBackgroundColor="@android:color/white"
                     app:cardElevation="0dp"
-                    app:cardUseCompatPadding="true"
-                    android:layout_height="match_parent"
-                    android:layout_width="match_parent">
+                    app:cardUseCompatPadding="true">
 
                     <TextView
-                        android:id="@+id/bbqBaconPrice"
+                        android:id="@+id/pulledPorkPrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="275dp"
                         android:layout_marginRight="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="10.99" />
+                        android:text="7.99" />
 
                     <TextView
-                        android:id="@+id/bbqBaconDescription"
+                        android:id="@+id/pulledPorkDescription"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="12dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="35dp"
-                        android:text="A favorite around here. A half pound patty with cheddar cheese, smoky bacon, golden onion rings, lettuce, tomato and somethered in our Sweet Hickory Sauce"
+                        android:text="Always a fovorite and never disappoints, the traditional classic sandwich sports slow smoked and hand pulled pork piled high in between a house made herb bun."
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
@@ -353,13 +356,13 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/bbqBaconName"
+                        android:id="@+id/pulledPorkName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="BBQ Bacon"
+                        android:text="Pulled Pork"
                         android:textSize="20dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -372,36 +375,36 @@
 
                 <!-- New Menu Item -->
                 <android.support.v7.widget.CardView
-                    android:id="@+id/honeyBadgerCard"
-                    android:clickable="true"
-                    android:onClick="onClick"
+                    android:id="@+id/brisketStackerCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_marginBottom="8dp"
                     android:layout_marginLeft="8dp"
                     android:layout_marginRight="8dp"
                     android:layout_rowWeight="1"
+                    android:clickable="true"
+                    android:onClick="onClick"
                     app:cardBackgroundColor="@android:color/white"
                     app:cardElevation="0dp"
-                    app:cardUseCompatPadding="true"
-                    android:layout_height="match_parent"
-                    android:layout_width="match_parent">
+                    app:cardUseCompatPadding="true">
 
                     <TextView
-                        android:id="@+id/honeyBadgerPrice"
+                        android:id="@+id/brisketStackerPrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="275dp"
                         android:layout_marginRight="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="12.49" />
+                        android:text="9.99" />
 
                     <TextView
-                        android:id="@+id/honeyBadgerDescription"
+                        android:id="@+id/brisketStackerDescription"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="12dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="35dp"
-                        android:text="If you want a burger that flirts with the wild side, you have found it! Start with our signature half pound patty and stack it with grilled pastrami, wrapped tightly around a 4 ounce portion of slow smoked pulled pork, crispy bacon, lettuce, pickle, tomato, onion, swiss and placed carefully between buns grilled with golden honey and mustard. You will not soon forget your date with the badger!"
+                        android:text="Low and slow brisket, thinly sliced and piled high, complimented with bacon, Swiss cheese and grilled onions."
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
@@ -409,13 +412,13 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/honeyBadgerName"
+                        android:id="@+id/brisketStackerName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="Honey Badger"
+                        android:text="Brisket Stacker"
                         android:textSize="20dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -428,36 +431,36 @@
 
                 <!-- New Menu Item -->
                 <android.support.v7.widget.CardView
-                    android:id="@+id/bbqBaconCard"
-                    android:clickable="true"
-                    android:onClick="onClick"
+                    android:id="@+id/sirloinSteakFajitaWrapCard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
                     android:layout_marginBottom="8dp"
                     android:layout_marginLeft="8dp"
                     android:layout_marginRight="8dp"
                     android:layout_rowWeight="1"
+                    android:clickable="true"
+                    android:onClick="onClick"
                     app:cardBackgroundColor="@android:color/white"
                     app:cardElevation="0dp"
-                    app:cardUseCompatPadding="true"
-                    android:layout_height="match_parent"
-                    android:layout_width="match_parent">
+                    app:cardUseCompatPadding="true">
 
                     <TextView
-                        android:id="@+id/bbqBaconPrice"
+                        android:id="@+id/sirloinSteakFajitaWrapPrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="275dp"
                         android:layout_marginRight="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="10.99" />
+                        android:text="8.99" />
 
                     <TextView
-                        android:id="@+id/bbqBaconDescription"
+                        android:id="@+id/sirloinSteakFajitaWrapDescription"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="12dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="35dp"
-                        android:text="A favorite around here. A half pound patty with cheddar cheese, smoky bacon, golden onion rings, lettuce, tomato and somethered in our Sweet Hickory Sauce"
+                        android:text="Our perfefctly seasoned sirloin steak grilled to a medium well and tossed with a pile of grilled onions and peppers, pepper-jack cheese and avocado salsa verde wrapped together in a grilled tortilla."
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
@@ -465,13 +468,13 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/bbqBaconName"
+                        android:id="@+id/sirloinSteakFajitaWrapName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="BBQ Bacon"
+                        android:text="Sirloin Steak Fajita Wrap"
                         android:textSize="20dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -484,7 +487,7 @@
 
                 <!-- New Menu Item -->
                 <android.support.v7.widget.CardView
-                    android:id="@+id/honeyBadgerCard"
+                    android:id="@+id/theTBACard"
                     android:clickable="true"
                     android:onClick="onClick"
                     android:layout_marginBottom="8dp"
@@ -498,22 +501,22 @@
                     android:layout_width="match_parent">
 
                     <TextView
-                        android:id="@+id/honeyBadgerPrice"
+                        android:id="@+id/theTBAPrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="275dp"
                         android:layout_marginRight="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="12.49" />
+                        android:text="7.99" />
 
                     <TextView
-                        android:id="@+id/honeyBadgerDescription"
+                        android:id="@+id/theTBADescription"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="12dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="35dp"
-                        android:text="If you want a burger that flirts with the wild side, you have found it! Start with our signature half pound patty and stack it with grilled pastrami, wrapped tightly around a 4 ounce portion of slow smoked pulled pork, crispy bacon, lettuce, pickle, tomato, onion, swiss and placed carefully between buns grilled with golden honey and mustard. You will not soon forget your date with the badger!"
+                        android:text="The Turkey, Bacon and Avocado sandwich is a true love story of an unlikely union of opposites that brouht together by chance create a magic together. Hickorysmoked, season infused turkey thinly sliced and stacked on fresh garlic/butter grilled sourdough bread, befriend by slices of bacon and fresh avocado."
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
@@ -521,13 +524,13 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/honeyBadgerName"
+                        android:id="@+id/theTBAName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="Honey Badger"
+                        android:text="The TBA"
                         android:textSize="20dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -552,6 +555,117 @@
                 android:orientation="vertical">
                 <!-- New Menu Item -->
                 <android.support.v7.widget.CardView
+                    android:id="@+id/quarterPounderCard"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_rowWeight="1"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="true"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:id="@+id/quarterPounderPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="275dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="6.99" />
+
+                    <TextView
+                        android:id="@+id/quarterPounderDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="35dp"
+                        android:text="For the light appetite, choose our smollaer 1/4 lb. patty served with lettuce, tomato, onion and pickle."
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/quarterPounderName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Quarter Pounder"
+                        android:textSize="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.052" />
+                </android.support.v7.widget.CardView>
+
+                <!-- New Menu Item -->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/halfPounderCard"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_rowWeight="1"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="true"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:id="@+id/halfPounderPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="275dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="7.99" />
+
+                    <TextView
+                        android:id="@+id/halfPounderDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="35dp"
+                        android:text="1/2lb. patty with lettuce, tomato, onion, and pickle."
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/halfPounderName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Half Pounder"
+                        android:textSize="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.052" />
+                </android.support.v7.widget.CardView>
+                <!-- New Menu Item -->
+                <android.support.v7.widget.CardView
                     android:id="@+id/bbqBaconCard"
                     android:clickable="true"
                     android:onClick="onClick"
@@ -572,7 +686,7 @@
                         android:layout_marginLeft="275dp"
                         android:layout_marginRight="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="10.99" />
+                        android:text="9.99" />
 
                     <TextView
                         android:id="@+id/bbqBaconDescription"
@@ -663,7 +777,7 @@
                 </android.support.v7.widget.CardView>
                 <!-- New Menu Item -->
                 <android.support.v7.widget.CardView
-                    android:id="@+id/bbqBaconCard"
+                    android:id="@+id/briskeyBuisnessCard"
                     android:clickable="true"
                     android:onClick="onClick"
                     android:layout_marginBottom="8dp"
@@ -677,7 +791,63 @@
                     android:layout_width="match_parent">
 
                     <TextView
-                        android:id="@+id/bbqBaconPrice"
+                        android:id="@+id/briskyBuisnessPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="275dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="11.99" />
+
+                    <TextView
+                        android:id="@+id/briskyBuisnessDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="35dp"
+                        android:text="Take a 1.2lb. patty add a few ounces of our 16-hour smoked brisket, lettuce, tomato and a slice of cheddar. Then top that with golden onion rings and drizzle of some of the Sweet Hickory sauce. its a thing of beauty, really-beefy, beefy beauty."
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/briskyBuisnessName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Briskey Buisness"
+                        android:textSize="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.052" />
+                </android.support.v7.widget.CardView>
+
+                <!-- New Menu Item -->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/bigSCard"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_rowWeight="1"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="true"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:id="@+id/bigSPrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="275dp"
@@ -686,13 +856,13 @@
                         android:text="10.99" />
 
                     <TextView
-                        android:id="@+id/bbqBaconDescription"
+                        android:id="@+id/bigSDescription"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="12dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="35dp"
-                        android:text="A favorite around here. A half pound patty with cheddar cheese, smoky bacon, golden onion rings, lettuce, tomato and somethered in our Sweet Hickory Sauce"
+                        android:text="1/2lb. patty with lettuce, tomato, onion, and pickle between two of our grilled cheese sandwiches. Yup, grilled cheese sandwiches."
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
@@ -700,180 +870,13 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/bbqBaconName"
+                        android:id="@+id/bigSName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="BBQ Bacon"
-                        android:textSize="20dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.052" />
-                </android.support.v7.widget.CardView>
-
-                <!-- New Menu Item -->
-                <android.support.v7.widget.CardView
-                    android:id="@+id/honeyBadgerCard"
-                    android:clickable="true"
-                    android:onClick="onClick"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_rowWeight="1"
-                    app:cardBackgroundColor="@android:color/white"
-                    app:cardElevation="0dp"
-                    app:cardUseCompatPadding="true"
-                    android:layout_height="match_parent"
-                    android:layout_width="match_parent">
-
-                    <TextView
-                        android:id="@+id/honeyBadgerPrice"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="275dp"
-                        android:layout_marginRight="8dp"
-                        android:layout_marginTop="8dp"
-                        android:text="12.49" />
-
-                    <TextView
-                        android:id="@+id/honeyBadgerDescription"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="12dp"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginTop="35dp"
-                        android:text="If you want a burger that flirts with the wild side, you have found it! Start with our signature half pound patty and stack it with grilled pastrami, wrapped tightly around a 4 ounce portion of slow smoked pulled pork, crispy bacon, lettuce, pickle, tomato, onion, swiss and placed carefully between buns grilled with golden honey and mustard. You will not soon forget your date with the badger!"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/honeyBadgerName"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginTop="8dp"
-                        android:text="Honey Badger"
-                        android:textSize="20dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.052" />
-                </android.support.v7.widget.CardView>
-                <!-- New Menu Item -->
-                <android.support.v7.widget.CardView
-                    android:id="@+id/bbqBaconCard"
-                    android:clickable="true"
-                    android:onClick="onClick"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_rowWeight="1"
-                    app:cardBackgroundColor="@android:color/white"
-                    app:cardElevation="0dp"
-                    app:cardUseCompatPadding="true"
-                    android:layout_height="match_parent"
-                    android:layout_width="match_parent">
-
-                    <TextView
-                        android:id="@+id/bbqBaconPrice"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="275dp"
-                        android:layout_marginRight="8dp"
-                        android:layout_marginTop="8dp"
-                        android:text="10.99" />
-
-                    <TextView
-                        android:id="@+id/bbqBaconDescription"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="12dp"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginTop="35dp"
-                        android:text="A favorite around here. A half pound patty with cheddar cheese, smoky bacon, golden onion rings, lettuce, tomato and somethered in our Sweet Hickory Sauce"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/bbqBaconName"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginTop="8dp"
-                        android:text="BBQ Bacon"
-                        android:textSize="20dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.052" />
-                </android.support.v7.widget.CardView>
-
-                <!-- New Menu Item -->
-                <android.support.v7.widget.CardView
-                    android:id="@+id/honeyBadgerCard"
-                    android:clickable="true"
-                    android:onClick="onClick"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_rowWeight="1"
-                    app:cardBackgroundColor="@android:color/white"
-                    app:cardElevation="0dp"
-                    app:cardUseCompatPadding="true"
-                    android:layout_height="match_parent"
-                    android:layout_width="match_parent">
-
-                    <TextView
-                        android:id="@+id/honeyBadgerPrice"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="275dp"
-                        android:layout_marginRight="8dp"
-                        android:layout_marginTop="8dp"
-                        android:text="12.49" />
-
-                    <TextView
-                        android:id="@+id/honeyBadgerDescription"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="12dp"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginTop="35dp"
-                        android:text="If you want a burger that flirts with the wild side, you have found it! Start with our signature half pound patty and stack it with grilled pastrami, wrapped tightly around a 4 ounce portion of slow smoked pulled pork, crispy bacon, lettuce, pickle, tomato, onion, swiss and placed carefully between buns grilled with golden honey and mustard. You will not soon forget your date with the badger!"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/honeyBadgerName"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginTop="8dp"
-                        android:text="Honey Badger"
+                        android:text="Big S"
                         android:textSize="20dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -898,7 +901,7 @@
                 android:orientation="vertical">
                 <!-- New Menu Item -->
                 <android.support.v7.widget.CardView
-                    android:id="@+id/bbqBaconCard"
+                    android:id="@+id/cobbCard"
                     android:clickable="true"
                     android:onClick="onClick"
                     android:layout_marginBottom="8dp"
@@ -912,22 +915,22 @@
                     android:layout_width="match_parent">
 
                     <TextView
-                        android:id="@+id/bbqBaconPrice"
+                        android:id="@+id/cobbPrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="275dp"
                         android:layout_marginRight="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="10.99" />
+                        android:text="9.99" />
 
                     <TextView
-                        android:id="@+id/bbqBaconDescription"
+                        android:id="@+id/cobbDescription"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="12dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="35dp"
-                        android:text="A favorite around here. A half pound patty with cheddar cheese, smoky bacon, golden onion rings, lettuce, tomato and somethered in our Sweet Hickory Sauce"
+                        android:text="A crisp house cut blend of lettuce topped with your choice of tender smoked or crispy chicken breast, diced bacon, black olives, avocado, egg and blue cheese crumbles."
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
@@ -935,13 +938,13 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/bbqBaconName"
+                        android:id="@+id/cobbName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="BBQ Bacon"
+                        android:text="Cobb Salad"
                         android:textSize="20dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -954,7 +957,7 @@
 
                 <!-- New Menu Item -->
                 <android.support.v7.widget.CardView
-                    android:id="@+id/honeyBadgerCard"
+                    android:id="@+id/sweetPulledPorkCard"
                     android:clickable="true"
                     android:onClick="onClick"
                     android:layout_marginBottom="8dp"
@@ -968,22 +971,22 @@
                     android:layout_width="match_parent">
 
                     <TextView
-                        android:id="@+id/honeyBadgerPrice"
+                        android:id="@+id/sweetPulledPorkPrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="275dp"
                         android:layout_marginRight="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="12.49" />
+                        android:text="9.99" />
 
                     <TextView
-                        android:id="@+id/honeyBadgerDescription"
+                        android:id="@+id/sweetPulledPorkDescription"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="12dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="35dp"
-                        android:text="If you want a burger that flirts with the wild side, you have found it! Start with our signature half pound patty and stack it with grilled pastrami, wrapped tightly around a 4 ounce portion of slow smoked pulled pork, crispy bacon, lettuce, pickle, tomato, onion, swiss and placed carefully between buns grilled with golden honey and mustard. You will not soon forget your date with the badger!"
+                        android:text="A pie tin pilled high with tangy sweet pork, crispy hand cut Romaine lettuce, tortilla chips, black beans, tomatoes, Queso Fresco Cheese, and served with cilantro-lime dressing and a wedge of lime."
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
@@ -991,13 +994,13 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/honeyBadgerName"
+                        android:id="@+id/sweetPulledPorkName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="Honey Badger"
+                        android:text="Sweet Pulled Pork Salad"
                         android:textSize="20dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -1022,7 +1025,7 @@
                 android:orientation="vertical">
                 <!-- New Menu Item -->
                 <android.support.v7.widget.CardView
-                    android:id="@+id/bbqBaconCard"
+                    android:id="@+id/flatIronRibeyeSteakCard"
                     android:clickable="true"
                     android:onClick="onClick"
                     android:layout_marginBottom="8dp"
@@ -1036,22 +1039,22 @@
                     android:layout_width="match_parent">
 
                     <TextView
-                        android:id="@+id/bbqBaconPrice"
+                        android:id="@+id/flatIronRibeyeSteakPrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="275dp"
                         android:layout_marginRight="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="10.99" />
+                        android:text="19.99" />
 
                     <TextView
-                        android:id="@+id/bbqBaconDescription"
+                        android:id="@+id/flatIronRibeyeSteakDescription"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="12dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="35dp"
-                        android:text="A favorite around here. A half pound patty with cheddar cheese, smoky bacon, golden onion rings, lettuce, tomato and somethered in our Sweet Hickory Sauce"
+                        android:text="With steak, bigger is always better! Perfectly Marbled and flavorful cut of steak grilled to perfection on a searing hot flat iron to seal in the moisture and flavor. Served in a ginourmous 16 oz cut, this utopian steak will not leave you searching for more!"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
@@ -1059,13 +1062,13 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/bbqBaconName"
+                        android:id="@+id/flatIronRibeyeSteakName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="BBQ Bacon"
+                        android:text="Flat Iron Ribeye Steak"
                         android:textSize="20dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -1078,7 +1081,7 @@
 
                 <!-- New Menu Item -->
                 <android.support.v7.widget.CardView
-                    android:id="@+id/honeyBadgerCard"
+                    android:id="@+id/hickorySmokedPrimeRibCard"
                     android:clickable="true"
                     android:onClick="onClick"
                     android:layout_marginBottom="8dp"
@@ -1092,22 +1095,22 @@
                     android:layout_width="match_parent">
 
                     <TextView
-                        android:id="@+id/honeyBadgerPrice"
+                        android:id="@+id/hickorySmokedPrimeRibPrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="275dp"
                         android:layout_marginRight="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="12.49" />
+                        android:text="19.99" />
 
                     <TextView
-                        android:id="@+id/honeyBadgerDescription"
+                        android:id="@+id/hickorySmokedPrimeRibDescription"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="12dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="35dp"
-                        android:text="If you want a burger that flirts with the wild side, you have found it! Start with our signature half pound patty and stack it with grilled pastrami, wrapped tightly around a 4 ounce portion of slow smoked pulled pork, crispy bacon, lettuce, pickle, tomato, onion, swiss and placed carefully between buns grilled with golden honey and mustard. You will not soon forget your date with the badger!"
+                        android:text="Applauded as one of the most tender cuts of steak, our famous Hickory Smoked Prime Rib is a generous 14oz cut of smoked prime rib spiked with a signature Hickory blend of garlic and seasoning and roasted to juicy perfection. Served with a tangy Au Jus and/or horseradish sauce. Served Friday's and Saturday Nights after 4:00 PM. While supplies last!"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
@@ -1115,13 +1118,13 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/honeyBadgerName"
+                        android:id="@+id/hickorySmokedPrimeRibName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="Honey Badger"
+                        android:text="Hickory Smoked Prime Rib"
                         android:textSize="20dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -1133,7 +1136,7 @@
                 </android.support.v7.widget.CardView>
                 <!-- New Menu Item -->
                 <android.support.v7.widget.CardView
-                    android:id="@+id/bbqBaconCard"
+                    android:id="@+id/brisketCard"
                     android:clickable="true"
                     android:onClick="onClick"
                     android:layout_marginBottom="8dp"
@@ -1147,22 +1150,22 @@
                     android:layout_width="match_parent">
 
                     <TextView
-                        android:id="@+id/bbqBaconPrice"
+                        android:id="@+id/brisketPrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="275dp"
                         android:layout_marginRight="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="10.99" />
+                        android:text="11.99" />
 
                     <TextView
-                        android:id="@+id/bbqBaconDescription"
+                        android:id="@+id/brisketDescription"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="12dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="35dp"
-                        android:text="A favorite around here. A half pound patty with cheddar cheese, smoky bacon, golden onion rings, lettuce, tomato and somethered in our Sweet Hickory Sauce"
+                        android:text="For those craving some serious BBQ beef, our brisket is smoked for 18 hours until it's tender, and dripping with flavor."
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
@@ -1170,124 +1173,13 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/bbqBaconName"
+                        android:id="@+id/brisketName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="BBQ Bacon"
-                        android:textSize="20dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.052" />
-                </android.support.v7.widget.CardView>
-
-                <!-- New Menu Item -->
-                <android.support.v7.widget.CardView
-                    android:id="@+id/honeyBadgerCard"
-                    android:clickable="true"
-                    android:onClick="onClick"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_rowWeight="1"
-                    app:cardBackgroundColor="@android:color/white"
-                    app:cardElevation="0dp"
-                    app:cardUseCompatPadding="true"
-                    android:layout_height="match_parent"
-                    android:layout_width="match_parent">
-
-                    <TextView
-                        android:id="@+id/honeyBadgerPrice"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="275dp"
-                        android:layout_marginRight="8dp"
-                        android:layout_marginTop="8dp"
-                        android:text="12.49" />
-
-                    <TextView
-                        android:id="@+id/honeyBadgerDescription"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="12dp"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginTop="35dp"
-                        android:text="If you want a burger that flirts with the wild side, you have found it! Start with our signature half pound patty and stack it with grilled pastrami, wrapped tightly around a 4 ounce portion of slow smoked pulled pork, crispy bacon, lettuce, pickle, tomato, onion, swiss and placed carefully between buns grilled with golden honey and mustard. You will not soon forget your date with the badger!"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/honeyBadgerName"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginTop="8dp"
-                        android:text="Honey Badger"
-                        android:textSize="20dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.052" />
-                </android.support.v7.widget.CardView>
-                <!-- New Menu Item -->
-                <android.support.v7.widget.CardView
-                    android:id="@+id/bbqBaconCard"
-                    android:clickable="true"
-                    android:onClick="onClick"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_rowWeight="1"
-                    app:cardBackgroundColor="@android:color/white"
-                    app:cardElevation="0dp"
-                    app:cardUseCompatPadding="true"
-                    android:layout_height="match_parent"
-                    android:layout_width="match_parent">
-
-                    <TextView
-                        android:id="@+id/bbqBaconPrice"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="275dp"
-                        android:layout_marginRight="8dp"
-                        android:layout_marginTop="8dp"
-                        android:text="10.99" />
-
-                    <TextView
-                        android:id="@+id/bbqBaconDescription"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="12dp"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginTop="35dp"
-                        android:text="A favorite around here. A half pound patty with cheddar cheese, smoky bacon, golden onion rings, lettuce, tomato and somethered in our Sweet Hickory Sauce"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/bbqBaconName"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginTop="8dp"
-                        android:text="BBQ Bacon"
+                        android:text="Brisket"
                         android:textSize="20dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -1300,7 +1192,7 @@
 
                 <!-- New Menu Item -->
                 <android.support.v7.widget.CardView
-                    android:id="@+id/honeyBadgerCard"
+                    android:id="@+id/chickenFriedSteakCard"
                     android:clickable="true"
                     android:onClick="onClick"
                     android:layout_marginBottom="8dp"
@@ -1314,22 +1206,22 @@
                     android:layout_width="match_parent">
 
                     <TextView
-                        android:id="@+id/honeyBadgerPrice"
+                        android:id="@+id/chickenFriedSteakPrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="275dp"
                         android:layout_marginRight="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="12.49" />
+                        android:text="11.99" />
 
                     <TextView
-                        android:id="@+id/honeyBadgerDescription"
+                        android:id="@+id/chickenFriedSteakDescription"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="12dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="35dp"
-                        android:text="If you want a burger that flirts with the wild side, you have found it! Start with our signature half pound patty and stack it with grilled pastrami, wrapped tightly around a 4 ounce portion of slow smoked pulled pork, crispy bacon, lettuce, pickle, tomato, onion, swiss and placed carefully between buns grilled with golden honey and mustard. You will not soon forget your date with the badger!"
+                        android:text="Crispy on the outside - tenderized 8oz. steak on the inside. Served with country gravy upon request."
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
@@ -1337,13 +1229,124 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/honeyBadgerName"
+                        android:id="@+id/chickenFriedSteakName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="Honey Badger"
+                        android:text="Chicken Fried Steak"
+                        android:textSize="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.052" />
+                </android.support.v7.widget.CardView>
+                <!-- New Menu Item -->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/grandmaRosiesMacAndCheeseCard"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_rowWeight="1"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="true"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:id="@+id/grandmaRosiesMacAndCheesePrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="275dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="7.99" />
+
+                    <TextView
+                        android:id="@+id/grandmaRosiesMacAndCheeseDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="35dp"
+                        android:text="Creamy and gooey like true comfort food. Then topped with bread crumnbs and more cheddar for extra flavor."
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/grandmaRosiesMacAndCheeseName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Grandma Rosies Mac And Cheese"
+                        android:textSize="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.052" />
+                </android.support.v7.widget.CardView>
+
+                <!-- New Menu Item -->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/smokedTurkeyDinnerCard"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_rowWeight="1"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="true"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:id="@+id/smokedTurkeyDinnerPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="275dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="11.99" />
+
+                    <TextView
+                        android:id="@+id/smokedTurkeyDinnerDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="35dp"
+                        android:text="This is not Clark Griswold's Turkey! Enjoy generous slices of moist and tender smoked turkey injected with a buttery seasoned rub and cooked to perfection!"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/smokedTurkeyDinnerName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Smoked Turkey Dinner"
                         android:textSize="20dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -1368,7 +1371,7 @@
                 android:orientation="vertical">
                 <!-- New Menu Item -->
                 <android.support.v7.widget.CardView
-                    android:id="@+id/bbqBaconCard"
+                    android:id="@+id/everestBrownieSundaeCard"
                     android:clickable="true"
                     android:onClick="onClick"
                     android:layout_marginBottom="8dp"
@@ -1382,22 +1385,22 @@
                     android:layout_width="match_parent">
 
                     <TextView
-                        android:id="@+id/bbqBaconPrice"
+                        android:id="@+id/everestBrownieSundaePrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="275dp"
                         android:layout_marginRight="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="10.99" />
+                        android:text="5.99" />
 
                     <TextView
-                        android:id="@+id/bbqBaconDescription"
+                        android:id="@+id/everestBrownieSundaeDescription"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="12dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="35dp"
-                        android:text="A favorite around here. A half pound patty with cheddar cheese, smoky bacon, golden onion rings, lettuce, tomato and somethered in our Sweet Hickory Sauce"
+                        android:text="See if you can climb this massive warm brownie crowned at the summit with Reed's Dairy ice cream and drizzled generously with thick hot fudge!"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
@@ -1405,13 +1408,13 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/bbqBaconName"
+                        android:id="@+id/everestBrownieSundaeName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="BBQ Bacon"
+                        android:text="Everest Brownie Sundae"
                         android:textSize="20dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -1424,7 +1427,7 @@
 
                 <!-- New Menu Item -->
                 <android.support.v7.widget.CardView
-                    android:id="@+id/honeyBadgerCard"
+                    android:id="@+id/rockyMountainMudPieCard"
                     android:clickable="true"
                     android:onClick="onClick"
                     android:layout_marginBottom="8dp"
@@ -1438,22 +1441,22 @@
                     android:layout_width="match_parent">
 
                     <TextView
-                        android:id="@+id/honeyBadgerPrice"
+                        android:id="@+id/rockyMountainMudPiePrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="275dp"
                         android:layout_marginRight="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="12.49" />
+                        android:text="3.99" />
 
                     <TextView
-                        android:id="@+id/honeyBadgerDescription"
+                        android:id="@+id/rockyMountainMudPieDescription"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="12dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="35dp"
-                        android:text="If you want a burger that flirts with the wild side, you have found it! Start with our signature half pound patty and stack it with grilled pastrami, wrapped tightly around a 4 ounce portion of slow smoked pulled pork, crispy bacon, lettuce, pickle, tomato, onion, swiss and placed carefully between buns grilled with golden honey and mustard. You will not soon forget your date with the badger!"
+                        android:text="For the seeker of the chocolate coma......, start with an Oreo crust, then move to a dark chocolate pudding layer, covered with a creamy mile chocolate mousse and then crowned with whipped cream!"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
@@ -1461,13 +1464,13 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/honeyBadgerName"
+                        android:id="@+id/rockyMountainMudPieName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="Honey Badger"
+                        android:text="Rocky Mountain Mud Pie"
                         android:textSize="20dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -1479,7 +1482,7 @@
                 </android.support.v7.widget.CardView>
                 <!-- New Menu Item -->
                 <android.support.v7.widget.CardView
-                    android:id="@+id/bbqBaconCard"
+                    android:id="@+id/mudLakeCakeCard"
                     android:clickable="true"
                     android:onClick="onClick"
                     android:layout_marginBottom="8dp"
@@ -1493,22 +1496,22 @@
                     android:layout_width="match_parent">
 
                     <TextView
-                        android:id="@+id/bbqBaconPrice"
+                        android:id="@+id/mudLakeCakePrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="275dp"
                         android:layout_marginRight="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="10.99" />
+                        android:text="5.49" />
 
                     <TextView
-                        android:id="@+id/bbqBaconDescription"
+                        android:id="@+id/mudLakeCakeDescription"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="12dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="35dp"
-                        android:text="A favorite around here. A half pound patty with cheddar cheese, smoky bacon, golden onion rings, lettuce, tomato and somethered in our Sweet Hickory Sauce"
+                        android:text="An absolutely ginormous slice of moist dark chocolate cake topped with profuse amounts of homemade milk chocolate frosting complemented with a scoop of Reed's Dairy vanilla ice cream."
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
@@ -1516,13 +1519,13 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/bbqBaconName"
+                        android:id="@+id/mudLakeCakeName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="BBQ Bacon"
+                        android:text="Mud Lake Cake"
                         android:textSize="20dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -1535,7 +1538,7 @@
 
                 <!-- New Menu Item -->
                 <android.support.v7.widget.CardView
-                    android:id="@+id/honeyBadgerCard"
+                    android:id="@+id/mountainHuckleberryCheesecakeCard"
                     android:clickable="true"
                     android:onClick="onClick"
                     android:layout_marginBottom="8dp"
@@ -1549,22 +1552,22 @@
                     android:layout_width="match_parent">
 
                     <TextView
-                        android:id="@+id/honeyBadgerPrice"
+                        android:id="@+id/mountainHuckleberryCheesecakePrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="275dp"
                         android:layout_marginRight="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="12.49" />
+                        android:text="5.99" />
 
                     <TextView
-                        android:id="@+id/honeyBadgerDescription"
+                        android:id="@+id/mountainHuckleberryCheesecakeDescription"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="12dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="35dp"
-                        android:text="If you want a burger that flirts with the wild side, you have found it! Start with our signature half pound patty and stack it with grilled pastrami, wrapped tightly around a 4 ounce portion of slow smoked pulled pork, crispy bacon, lettuce, pickle, tomato, onion, swiss and placed carefully between buns grilled with golden honey and mustard. You will not soon forget your date with the badger!"
+                        android:text="The magical mountain huckleberry is the perfect balance to this creamy slice of homemade New York Cheesecake. Sure to leave you night at the Hickory in a euphoric state!"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
@@ -1572,13 +1575,13 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/honeyBadgerName"
+                        android:id="@+id/mountainHuckleberryCheesecakeName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="Honey Badger"
+                        android:text="Mountain Huckleberry Cheesecake"
                         android:textSize="20dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -1603,7 +1606,7 @@
                 android:orientation="vertical">
                 <!-- New Menu Item -->
                 <android.support.v7.widget.CardView
-                    android:id="@+id/bbqBaconCard"
+                    android:id="@+id/pepsiCard"
                     android:clickable="true"
                     android:onClick="onClick"
                     android:layout_marginBottom="8dp"
@@ -1617,22 +1620,22 @@
                     android:layout_width="match_parent">
 
                     <TextView
-                        android:id="@+id/bbqBaconPrice"
+                        android:id="@+id/pepsiPrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="275dp"
                         android:layout_marginRight="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="10.99" />
+                        android:text="2.89" />
 
                     <TextView
-                        android:id="@+id/bbqBaconDescription"
+                        android:id="@+id/pepsiDescription"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="12dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="35dp"
-                        android:text="A favorite around here. A half pound patty with cheddar cheese, smoky bacon, golden onion rings, lettuce, tomato and somethered in our Sweet Hickory Sauce"
+                        android:text="Pepsi Soda"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
@@ -1640,13 +1643,13 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/bbqBaconName"
+                        android:id="@+id/pepsiName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="BBQ Bacon"
+                        android:text="Pepsi"
                         android:textSize="20dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -1659,7 +1662,7 @@
 
                 <!-- New Menu Item -->
                 <android.support.v7.widget.CardView
-                    android:id="@+id/honeyBadgerCard"
+                    android:id="@+id/dietPepsiCard"
                     android:clickable="true"
                     android:onClick="onClick"
                     android:layout_marginBottom="8dp"
@@ -1673,22 +1676,22 @@
                     android:layout_width="match_parent">
 
                     <TextView
-                        android:id="@+id/honeyBadgerPrice"
+                        android:id="@+id/dietPepsiPrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="275dp"
                         android:layout_marginRight="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="12.49" />
+                        android:text="2.89" />
 
                     <TextView
-                        android:id="@+id/honeyBadgerDescription"
+                        android:id="@+id/dietPepsiDescription"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="12dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="35dp"
-                        android:text="If you want a burger that flirts with the wild side, you have found it! Start with our signature half pound patty and stack it with grilled pastrami, wrapped tightly around a 4 ounce portion of slow smoked pulled pork, crispy bacon, lettuce, pickle, tomato, onion, swiss and placed carefully between buns grilled with golden honey and mustard. You will not soon forget your date with the badger!"
+                        android:text="Diet Pepsi Soda"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
@@ -1696,13 +1699,13 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/honeyBadgerName"
+                        android:id="@+id/dietPepsiName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="Honey Badger"
+                        android:text="Diet Pepsi"
                         android:textSize="20dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -1714,7 +1717,7 @@
                 </android.support.v7.widget.CardView>
                 <!-- New Menu Item -->
                 <android.support.v7.widget.CardView
-                    android:id="@+id/bbqBaconCard"
+                    android:id="@+id/mountainDewCard"
                     android:clickable="true"
                     android:onClick="onClick"
                     android:layout_marginBottom="8dp"
@@ -1728,22 +1731,22 @@
                     android:layout_width="match_parent">
 
                     <TextView
-                        android:id="@+id/bbqBaconPrice"
+                        android:id="@+id/mountainDewPrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="275dp"
                         android:layout_marginRight="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="10.99" />
+                        android:text="2.89" />
 
                     <TextView
-                        android:id="@+id/bbqBaconDescription"
+                        android:id="@+id/mountainDewDescription"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="12dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="35dp"
-                        android:text="A favorite around here. A half pound patty with cheddar cheese, smoky bacon, golden onion rings, lettuce, tomato and somethered in our Sweet Hickory Sauce"
+                        android:text="Mountain Dew Soda"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
@@ -1751,124 +1754,13 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/bbqBaconName"
+                        android:id="@+id/mountainDewName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="BBQ Bacon"
-                        android:textSize="20dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.052" />
-                </android.support.v7.widget.CardView>
-
-                <!-- New Menu Item -->
-                <android.support.v7.widget.CardView
-                    android:id="@+id/honeyBadgerCard"
-                    android:clickable="true"
-                    android:onClick="onClick"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_rowWeight="1"
-                    app:cardBackgroundColor="@android:color/white"
-                    app:cardElevation="0dp"
-                    app:cardUseCompatPadding="true"
-                    android:layout_height="match_parent"
-                    android:layout_width="match_parent">
-
-                    <TextView
-                        android:id="@+id/honeyBadgerPrice"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="275dp"
-                        android:layout_marginRight="8dp"
-                        android:layout_marginTop="8dp"
-                        android:text="12.49" />
-
-                    <TextView
-                        android:id="@+id/honeyBadgerDescription"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="12dp"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginTop="35dp"
-                        android:text="If you want a burger that flirts with the wild side, you have found it! Start with our signature half pound patty and stack it with grilled pastrami, wrapped tightly around a 4 ounce portion of slow smoked pulled pork, crispy bacon, lettuce, pickle, tomato, onion, swiss and placed carefully between buns grilled with golden honey and mustard. You will not soon forget your date with the badger!"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/honeyBadgerName"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginTop="8dp"
-                        android:text="Honey Badger"
-                        android:textSize="20dp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:layout_constraintVertical_bias="0.052" />
-                </android.support.v7.widget.CardView>
-                <!-- New Menu Item -->
-                <android.support.v7.widget.CardView
-                    android:id="@+id/bbqBaconCard"
-                    android:clickable="true"
-                    android:onClick="onClick"
-                    android:layout_marginBottom="8dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginRight="8dp"
-                    android:layout_rowWeight="1"
-                    app:cardBackgroundColor="@android:color/white"
-                    app:cardElevation="0dp"
-                    app:cardUseCompatPadding="true"
-                    android:layout_height="match_parent"
-                    android:layout_width="match_parent">
-
-                    <TextView
-                        android:id="@+id/bbqBaconPrice"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="275dp"
-                        android:layout_marginRight="8dp"
-                        android:layout_marginTop="8dp"
-                        android:text="10.99" />
-
-                    <TextView
-                        android:id="@+id/bbqBaconDescription"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="12dp"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginTop="35dp"
-                        android:text="A favorite around here. A half pound patty with cheddar cheese, smoky bacon, golden onion rings, lettuce, tomato and somethered in our Sweet Hickory Sauce"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintLeft_toLeftOf="parent"
-                        app:layout_constraintRight_toRightOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/bbqBaconName"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginBottom="8dp"
-                        android:layout_marginLeft="8dp"
-                        android:layout_marginTop="8dp"
-                        android:text="BBQ Bacon"
+                        android:text="Mountain Dew"
                         android:textSize="20dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
@@ -1881,7 +1773,7 @@
 
                 <!-- New Menu Item -->
                 <android.support.v7.widget.CardView
-                    android:id="@+id/honeyBadgerCard"
+                    android:id="@+id/dietMountainDewCard"
                     android:clickable="true"
                     android:onClick="onClick"
                     android:layout_marginBottom="8dp"
@@ -1895,22 +1787,22 @@
                     android:layout_width="match_parent">
 
                     <TextView
-                        android:id="@+id/honeyBadgerPrice"
+                        android:id="@+id/dietMountainDewPrice"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="275dp"
                         android:layout_marginRight="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="12.49" />
+                        android:text="2.89" />
 
                     <TextView
-                        android:id="@+id/honeyBadgerDescription"
+                        android:id="@+id/dietMountainDewDescription"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="12dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="35dp"
-                        android:text="If you want a burger that flirts with the wild side, you have found it! Start with our signature half pound patty and stack it with grilled pastrami, wrapped tightly around a 4 ounce portion of slow smoked pulled pork, crispy bacon, lettuce, pickle, tomato, onion, swiss and placed carefully between buns grilled with golden honey and mustard. You will not soon forget your date with the badger!"
+                        android:text="Diet Mountain Dew Soda"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintLeft_toLeftOf="parent"
                         app:layout_constraintRight_toRightOf="parent"
@@ -1918,13 +1810,124 @@
                         app:layout_constraintTop_toTopOf="parent" />
 
                     <TextView
-                        android:id="@+id/honeyBadgerName"
+                        android:id="@+id/dietMountainDewName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginBottom="8dp"
                         android:layout_marginLeft="8dp"
                         android:layout_marginTop="8dp"
-                        android:text="Honey Badger"
+                        android:text="Diet Mountain Dew"
+                        android:textSize="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.052" />
+                </android.support.v7.widget.CardView>
+                <!-- New Menu Item -->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/rootbeerCard"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_rowWeight="1"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="true"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:id="@+id/rootbeerPrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="275dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="2.89" />
+
+                    <TextView
+                        android:id="@+id/rootbeerDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="35dp"
+                        android:text="Rootbeer Soda"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/rootbeerName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Rootbeer"
+                        android:textSize="20dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.052" />
+                </android.support.v7.widget.CardView>
+
+                <!-- New Menu Item -->
+                <android.support.v7.widget.CardView
+                    android:id="@+id/lemonadeCard"
+                    android:clickable="true"
+                    android:onClick="onClick"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_rowWeight="1"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="true"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:id="@+id/lemonadePrice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="275dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="2.89" />
+
+                    <TextView
+                        android:id="@+id/lemonadeDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="35dp"
+                        android:text="Lemonade"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/lemonadeName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp"
+                        android:text="Lemonade"
                         android:textSize="20dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
