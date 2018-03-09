@@ -22,7 +22,8 @@
         <activity
             android:name=".CheckoutActivity"
             android:parentActivityName=".MenuActivity"></activity>
-        <activity android:name=".DisplayItemActivity"></activity>
+        <activity android:name=".DisplayItemActivity"
+            android:parentActivityName=".MenuActivity"></activity>
     </application>
 
 </manifest>

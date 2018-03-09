@@ -3,6 +3,7 @@ package com.example.team6.togo;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import java.util.jar.Attributes;
@@ -28,4 +29,10 @@ public class DisplayItemActivity extends AppCompatActivity {
         tPrice.setText(price);
 
     }
+
+    public void added(View view) {
+        Intent intent = new Intent(this, MenuActivity.class);
+        startActivity(intent);
+    }
+
 }
