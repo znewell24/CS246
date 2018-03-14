@@ -45,23 +45,46 @@
         android:id="@+id/toCart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="96dp"
         android:onClick="added"
         android:text="Add to Cart"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/quantity" />
 
-    <EditText
+    <TextView
         android:id="@+id/quantity"
         android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:ems="10"
-        android:hint="Quantity"
-        android:inputType="number"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="48dp"
+        android:text="1"
         android:singleLine="false"
+        app:layout_constraintEnd_toStartOf="@+id/subbq"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/price" />
+
+    <Button
+        android:id="@+id/addq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginTop="36dp"
+        android:onClick="changeQuantity"
+        android:text="+"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/price" />
+
+    <Button
+        android:id="@+id/subbq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="36dp"
+        android:onClick="changeQuantity"
+        android:text="-"
+        app:layout_constraintEnd_toStartOf="@+id/addq"
+        app:layout_constraintTop_toBottomOf="@+id/price" />
+
 </android.support.constraint.ConstraintLayout>

@@ -14,6 +14,7 @@ public class DisplayItemActivity extends AppCompatActivity {
     private TextView tName;
     private TextView tDescription;
     private TextView tPrice;
+    private int totalq = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +35,25 @@ public class DisplayItemActivity extends AppCompatActivity {
         tPrice.setText(price);
 
     }
+
+    public void changeQuantity(View view) {
+        TextView qview = (TextView) findViewById(R.id.quantity);
+
+        switch (view.getId()) {
+            case R.id.addq:
+                if(totalq < 10) {
+                    totalq = totalq + 1;
+                }
+                break;
+            case R.id.subbq:
+                if(totalq > 1) {
+                    totalq = totalq - 1;
+                }
+                break;
+        }
+        qview.setText(Integer.toString(totalq));
+    }
+
 
     public void added(View view) {
         Intent intent = new Intent(this, MenuActivity.class);
