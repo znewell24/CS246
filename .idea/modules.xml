@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/ToGo.iml" filepath="$PROJECT_DIR$/ToGo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://C:\Users\znewe_000\AndroidStudioProjects\ToGo\app\app.iml" filepath="C:\Users\znewe_000\AndroidStudioProjects\ToGo\app\app.iml" />
-      <module fileurl="file://C:\Users\znewe_000\AndroidStudioProjects\ToGo\togo.iml" filepath="C:\Users\znewe_000\AndroidStudioProjects\ToGo\togo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/togo.iml" filepath="$PROJECT_DIR$/togo.iml" />
     </modules>
   </component>
 </project>
