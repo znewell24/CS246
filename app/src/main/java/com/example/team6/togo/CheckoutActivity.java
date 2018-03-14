@@ -3,6 +3,9 @@ package com.example.team6.togo;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.ViewGroup;
+import android.widget.LinearLayout;
+import android.widget.ScrollView;
 
 public class CheckoutActivity extends AppCompatActivity {
 
@@ -12,5 +15,7 @@ public class CheckoutActivity extends AppCompatActivity {
         setContentView(R.layout.activity_checkout);
 
         Intent intent = getIntent();
+
+
     }
 }

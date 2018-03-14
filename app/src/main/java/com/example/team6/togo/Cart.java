@@ -15,17 +15,19 @@ public class Cart extends Application{
     private List<Food> cartList = new ArrayList<>();
     private double total = 0.0;
 
-    //cartList getter and setter
+    //cartList getter and setter  *added a remove 3/14
     public List<Food> getCartList() {
         return this.cartList;
     }
     public void setCartList(Food f) {
         cartList.add(f);
     }
+    public void removeItem(Food f) { cartList.remove(f); }
 
-    //total getter and setter
+    //total getter and setter  *added a subtract 3/14
     public double getTotal(){
         return this.total;
     }
     public void setTotal(double price){ total += price; }
+    public void subractTotal(double price){ total -= price; }
 }
