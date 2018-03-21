@@ -37,8 +37,9 @@ public class CheckoutActivity extends AppCompatActivity {
             li.addView(p);
 
             TextView q = new TextView(this);
-            q.setText(f.getQuantity());
+            q.setText("Quantity: " + f.getQuantity() + "\n");
             li.addView(q);
+
         }
 
 
