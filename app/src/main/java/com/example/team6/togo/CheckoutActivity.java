@@ -8,6 +8,7 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
+import java.text.DecimalFormat;
 import java.util.List;
 
 public class CheckoutActivity extends AppCompatActivity {
@@ -20,6 +21,7 @@ public class CheckoutActivity extends AppCompatActivity {
         Intent intent = getIntent();
 
         createReciept();
+        printTotals();
     }
 
     public void createReciept () {
@@ -41,6 +43,17 @@ public class CheckoutActivity extends AppCompatActivity {
             li.addView(q);
 
         }
+    }
+
+    public void printTotals(){
+        TextView subTotal = (TextView) findViewById(R.id.subTotal);
+        TextView tax = (TextView) findViewById(R.id.tax);
+        TextView total = (TextView) findViewById(R.id.total);
+        DecimalFormat d = new DecimalFormat("#.##");
+
+        subTotal.setText("$" + d.format(((Cart) this.getApplication()).getTotal()));
+        tax.setText("$" + d.format(((Cart) this.getApplication()).getTax() + 0.00));
+        total.setText("$" + d.format((((Cart) this.getApplication()).getTax()) + ((Cart) this.getApplication()).getTotal()));
 
 
     }

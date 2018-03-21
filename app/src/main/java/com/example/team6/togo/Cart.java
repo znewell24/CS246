@@ -13,7 +13,8 @@ public class Cart extends Application{
 
     //global variable to access in the different activities
     private List<Food> cartList = new ArrayList<>();
-    private double total = 0.0;
+    private double total = 0.00;
+    private double tax = 0.06;
 
     //cartList getter and setter  *added a remove 3/14
     public List<Food> getCartList() {
@@ -28,6 +29,7 @@ public class Cart extends Application{
     public double getTotal(){
         return this.total;
     }
+    public double getTax() { return (this.total * this.tax); }
     public void setTotal(double price){ total += price; }
     public void subractTotal(double price){ total -= price; }
 }
