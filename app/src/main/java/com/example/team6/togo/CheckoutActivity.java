@@ -1,17 +1,22 @@
 package com.example.team6.togo;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.text.DecimalFormat;
 import java.util.List;
 
 public class CheckoutActivity extends AppCompatActivity {
+
+//    private DecimalFormat d = new DecimalFormat("#.##");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,5 +61,36 @@ public class CheckoutActivity extends AppCompatActivity {
         total.setText("$" + d.format((((Cart) this.getApplication()).getTax()) + ((Cart) this.getApplication()).getTotal()));
 
 
+    }
+
+    public void placeOrder(View view) {
+        String[] TO = {"example@gmail.com"};
+        List<Food> l = ((Cart) this.getApplication()).getCartList();
+//        String body = "";
+        DecimalFormat d = new DecimalFormat("#.##");
+        StringBuilder sb = new StringBuilder();
+        Intent emailIntent = new Intent(Intent.ACTION_SEND);
+        //Convert list to string
+        for (Food f : l) {
+            f.toString();
+            sb.append(f);
+        }
+        sb.append("\n SubTotal: $" + d.format(((Cart) this.getApplication()).getTotal()) + "\n");
+        sb.append("Tax:          $" + d.format(((Cart) this.getApplication()).getTax()) + "\n");
+        sb.append("Total:       $" + d.format((((Cart) this.getApplication()).getTax()) + ((Cart) this.getApplication()).getTotal()));
+        String body = sb.toString();
+
+       // emailIntent.setData(Uri.parse("mailto:"))
+        emailIntent.setType("application/octet-stream");
+        emailIntent.putExtra(Intent.EXTRA_EMAIL, TO);
+        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "Hickory Confirmation");
+        emailIntent.putExtra(Intent.EXTRA_TEXT, body);
+
+        try{
+            startActivity(Intent.createChooser(emailIntent, "Send mail..."));
+            finish();
+        } catch (android.content.ActivityNotFoundException ex) {
+            Toast.makeText(this, "There is no email for ", Toast.LENGTH_SHORT).show();
+        }
     }
 }

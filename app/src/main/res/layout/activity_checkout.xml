@@ -31,6 +31,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="56dp"
         android:text="Total:"
+        android:textColor="@android:color/white"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.68"
@@ -70,6 +71,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:onClick="placeOrder"
         android:text="Place Your Order"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -83,6 +85,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:text="Tax:"
+        android:textColor="@android:color/white"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -97,11 +100,13 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:text="SubTotal:"
+        android:textColor="@android:color/white"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.652"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginRight="200dp"/>
 
     <TextView
         android:id="@+id/total"
@@ -111,6 +116,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:text="0.00"
+        android:textColor="@android:color/white"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -126,6 +132,7 @@
         android:layout_marginRight="16dp"
         android:layout_marginStart="8dp"
         android:text="0.00"
+        android:textColor="@android:color/white"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -140,6 +147,7 @@
         android:layout_marginBottom="124dp"
         android:layout_marginEnd="36dp"
         android:text="0.00"
+        android:textColor="@android:color/white"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

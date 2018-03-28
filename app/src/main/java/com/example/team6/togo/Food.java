@@ -26,4 +26,10 @@ public class Food {
     public void setPrice(String price) { this.price = price; }
     public String getQuantity() { return Integer.toString(quantity); }
     public void setQuantity(int quantity) { this.quantity = quantity; }
+
+    @Override
+    public String toString() {
+        return this.getName() + "\n" + "Quantity: " + this.getQuantity() + "   Price: $" + this.getPrice() + "\n"
+                + "-------------------------------------------\n";
+    }
 }
