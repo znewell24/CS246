@@ -3,7 +3,11 @@ package com.example.team6.togo;
 import android.content.Intent;
 
 /**
- * Created by znewe_000 on 3/14/2018.
+ * Holds the specific food item to be loaded into the list later
+ * holds a name, price, and quantity of the item for pricing purposes.
+ *
+ * @author znewe_000
+ * @since 3/14/2018.
  */
 //this is the class to be loaded into the shopping cart's list
 public class Food {
@@ -27,6 +31,7 @@ public class Food {
     public String getQuantity() { return Integer.toString(quantity); }
     public void setQuantity(int quantity) { this.quantity = quantity; }
 
+    //override the tostring method to correctly print the food item.
     @Override
     public String toString() {
         return this.getName() + "\n" + "Quantity: " + this.getQuantity() + "   Price: $" + this.getPrice() + "\n"

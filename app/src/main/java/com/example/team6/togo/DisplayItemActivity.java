@@ -9,8 +9,15 @@ import android.widget.Toast;
 
 import java.util.jar.Attributes;
 
+/**
+ * takes the information from menuactivity and displays it nicely
+ * with an option to add quantity and add to cart buttons
+ *
+ * @author Justin Reel, Andrew Shore, Zachary Newell
+ */
 public class DisplayItemActivity extends AppCompatActivity {
 
+    //private data
     private TextView tName;
     private TextView tDescription;
     private TextView tPrice;
@@ -33,9 +40,14 @@ public class DisplayItemActivity extends AppCompatActivity {
         tName.setText(name);
         tDescription.setText(description);
         tPrice.setText(price);
-
     }
 
+    /**
+     * uses the buttons to add or subtract the quantity
+     *
+     * @author Justin Reel, Andrew Shore, Zachary Newell
+     * @param view
+     */
     public void changeQuantity(View view) {
         TextView qview = (TextView) findViewById(R.id.quantity);
 
@@ -54,11 +66,17 @@ public class DisplayItemActivity extends AppCompatActivity {
         qview.setText(Integer.toString(totalq));
     }
 
-
+    /**
+     * create the food object and add it to the global list.
+     *
+     * @author Justin Reel, Andrew Shore, Zachary Newell
+     * @param view
+     */
     public void added(View view) {
         Intent intent = new Intent(this, MenuActivity.class);
         startActivity(intent);
 
+        //print to the screen and create the food object
         String n = tName.getText().toString();
         String p = tPrice.getText().toString();
         TextView quantity = findViewById(R.id.quantity);
@@ -70,6 +88,7 @@ public class DisplayItemActivity extends AppCompatActivity {
             ((Cart) this.getApplication()).setTotal(dPrice);
         }
 
+        //add to the list
         ((Cart) this.getApplication()).setCartList(f);
         Toast.makeText(this, "Item Added to Cart", Toast.LENGTH_SHORT).show();
     }

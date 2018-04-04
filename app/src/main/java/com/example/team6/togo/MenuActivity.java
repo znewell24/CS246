@@ -17,6 +17,12 @@ import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
+/**
+ * beefy activity, will determine which cardview was clicked in order to
+ * display correct information on the DisplayItemActivity.java
+ *
+ * @author Justin Reel, Andrew Shore, Zachary Newell
+ */
 public class MenuActivity extends AppCompatActivity {
     public static final String NAME = "com.example.team6.togo.sname";
     public static final String DES = "com.example.team6.togo.sdescription";
@@ -32,6 +38,12 @@ public class MenuActivity extends AppCompatActivity {
     }
 
 
+    /**
+     * holds the switch case which directs the app what information to send where
+     *
+     * @author Justin Reel, Andrew Shore, Zachary Newell
+     * @param view
+     */
     public void onClick(View view){
         Intent intent = new Intent(this, DisplayItemActivity.class);
         TextView name;
@@ -360,15 +372,7 @@ public class MenuActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-
-
-
-//    @Override
-//    public boolean onCreateOptionsMenu(Menu menu) {
-//        getMenuInflater().inflate(R.menu.menu, menu);
-//        return true;
-//    }
-
+    //to the checkoutactivity
     public void toCheckout(View view) {
         Intent intent = new Intent(this, CheckoutActivity.class);
         startActivity(intent);
